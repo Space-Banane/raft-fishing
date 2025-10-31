@@ -38,7 +38,7 @@ jobs:
     
     - name: Build executable
       run: |
-        pyinstaller --onefile --name raft_fishing main.py
+        pyinstaller --onefile --noconsole --name raft_fishing main.py
         if (-not (Test-Path "dist/raft_fishing.exe")) { exit 1 }
     
     - name: Create Release
