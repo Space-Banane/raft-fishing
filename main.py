@@ -15,7 +15,7 @@ class RaftFishingBot:
         self.running = False
         self.detection_thread = None
         self.timeout = 0.7
-        self.debug_mode = False
+        self.debug_mode = True
         
         # Create main window
         self.root = tk.Tk()

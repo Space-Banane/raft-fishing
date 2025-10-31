@@ -11,7 +11,7 @@ Detects the text "LMB"(or any specified key) a little above the center of the sc
 ## Setup
 
 ```sh
-pip install pyautogui easyocr opencv-python numpy
+pip install -r requirements.txt
 ```
 
 ## Usage
@@ -19,20 +19,3 @@ pip install pyautogui easyocr opencv-python numpy
 ```sh
 python main.py
 ```
-
-## Build as EXE
-
-1. Install PyInstaller:
-    ```sh
-    pip install pyinstaller
-    ```
-2. Build:
-    ```sh
-    pyinstaller --onefile raft_angel.py
-    ```
-3. The EXE will be in the `dist` folder.
-
-## Notes
-
-- Make sure you have a display (not headless/WSL).
-- The script will click and hold for 2 seconds if "LMB" is detected.
